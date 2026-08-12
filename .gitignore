@@ -1,0 +1,56 @@
+# Python 
+__pycache__/ 
+*.py[cod]
+ *$py.class
+
+ # Virtual environments 
+venv/ 
+env/ 
+.venv/ 
+habot_env/
+
+ # Django database 
+db.sqlite3 
+*.sqlite3
+
+ # Environment variables / secrets 
+.env
+ .env.* !
+.env.example 
+
+# IDE 
+.vscode/ 
+.idea/ 
+
+# OS files 
+.DS_Store 
+Thumbs.db 
+
+# Logs 
+*.log 
+
+# Testing / coverage 
+.coverage htmlcov/
+ .pytest_cache/ 
+.mypy_cache/ 
+
+
+# Build files 
+build/ 
+dist/ 
+*.egg-info/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
