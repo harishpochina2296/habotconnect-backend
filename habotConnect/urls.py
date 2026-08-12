@@ -19,6 +19,7 @@ from django.urls import path
 from accounts.views import RegisterView, CustomerDashboardView 
 from booking.views import BookingViewSet
 from rest_framework.routers import DefaultRouter
+from payments.views import PaymentWebhookView
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -48,6 +49,10 @@ urlpatterns = [
     'api/customer/dashboard/',
     CustomerDashboardView.as_view(),
     name='customer-dashboard'
+),
+   path(
+    "api/payments/webhook/",
+    PaymentWebhookView.as_view(),
 ),
 ]
 router = DefaultRouter()
