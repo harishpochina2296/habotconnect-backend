@@ -1,4 +1,4 @@
-HabotConnect Backend
+**HabotConnect Backend**
 
 
 
@@ -10,7 +10,7 @@ The project demonstrates practical backend engineering concepts including authen
 
 
 
-Tech Stack
+**Tech Stack**
 
 Python
 
@@ -26,7 +26,9 @@ PostgreSQL-compatible Django ORM
 
 Git/GitHub
 
-Project Structure
+
+
+**Project Structure**
 
 habotConnect/
 
@@ -78,7 +80,77 @@ habotConnect/
 
 └── README.md
 
-User Roles
+
+
+payments/
+
+├── models.py
+
+├── serializers.py
+
+├── views.py
+
+└── tests.py
+
+
+
+Payment Fields
+
+
+
+The Payment model contains:
+
+
+
+Booking
+
+Transaction ID
+
+Amount
+
+Payment status
+
+Created timestamp
+
+Updated timestamp
+
+
+
+
+
+
+
+Payment Webhook
+
+
+
+The project provides a webhook endpoint for receiving payment events.
+
+
+
+POST /api/payments/webhook/
+
+
+
+The webhook accepts payment events such as:
+
+
+
+{
+
+&#x20;   "event": "payment.success",
+
+&#x20;   "booking\_id": 1,
+
+&#x20;   "transaction\_id": "txn\_10001",
+
+&#x20;   "amount": "500.00"
+
+}
+
+
+
+**User Roles**
 
 
 
