@@ -940,7 +940,7 @@ Microservices
 
 **GitHub:**
 
-https://github.com/harishpochina2296/habotconnect-backendd
+https://github.com/harishpochina2296/habotconnect-backend
 
 ---
 
